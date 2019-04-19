@@ -16,27 +16,27 @@ const ECHO_LOCAL = process.env.ECHO_LOCAL === 'true'
 const HEALTHCHECKS_IO_URL = process.env.HEALTHCHECKS_IO_URL || undefined
 const HEALTHCHECKS_IO_HEARTBEAT_MINS = process.env.HEALTHCHECKS_IO_HEARTBEAT_MINS || 5
 module.exports = {
-	Azure: {
-		AzureConnectionString,
-		QueueName,
-		AzureFilter
-	},
-	Seq: {
-		SEQ_URL,
-        SEQ_API_KEY
-	},
-	Slack: {
-		bot_token,
-		rate_limit
-	},
-	Gelf: {
-		url: GELF_URL
-	},
-	Local: {
-		echo: ECHO_LOCAL
-	},
-	Healthchecksio: {
-		url: HEALTHCHECKS_IO_URL,
-		heartbeat: HEALTHCHECKS_IO_HEARTBEAT_MINS
-	}
+  Azure: {
+    AzureConnectionString,
+    QueueName,
+    AzureFilter
+  },
+  Seq: {
+    SEQ_URL,
+    SEQ_API_KEY
+  },
+  Slack: {
+    bot_token,
+    rate_limit
+  },
+  Gelf: {
+    url: GELF_URL
+  },
+  Local: {
+    echo: ECHO_LOCAL
+  },
+  Healthchecksio: {
+    url: HEALTHCHECKS_IO_URL,
+    heartbeat: HEALTHCHECKS_IO_HEARTBEAT_MINS
+  }
 }
